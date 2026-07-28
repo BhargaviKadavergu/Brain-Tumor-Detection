@@ -21,7 +21,7 @@ type=["jpg","png","jpeg"]
 
 if uploaded:
 
-    image=Image.open(uploaded)
+    image=Image.open(uploaded).convert("RGB")
 
     st.image(image,width=300)
 
